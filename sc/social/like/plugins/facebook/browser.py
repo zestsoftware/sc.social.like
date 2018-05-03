@@ -99,3 +99,9 @@ class PluginView(BrowserView):
             'redirect_uri': self.context.absolute_url(),
         }
         return 'https://www.facebook.com/dialog/share?' + urlencode(params)
+
+    def sharer_php_link(self):
+        params = {
+            'u': self.context.absolute_url(),
+        }
+        return 'https://www.facebook.com/sharer/sharer.php?' + urlencode(params)

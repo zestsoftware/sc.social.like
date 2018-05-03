@@ -15,3 +15,17 @@
              tal:attributes="src string:${view/portal_url}/++resource++sl_images/share-facebook.png" />
     </a>
 </tal:fb>
+<tal:fb tal:condition="not:view/app_id" i18n:domain="sc.social.like">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?"
+       class="slPrivacy"
+       title="Share on Facebook (open in new window)"
+       tal:attributes="href view/sharer_php_link"
+       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+       i18n:attributes="title">
+        <img src="share-linkedin.png"
+             alt="Share on Facebook"
+             i18n:attributes="alt"
+             tal:attributes="src string:${view/portal_url}/++resource++sl_images/share-facebook.png" />
+    </a>
+</tal:fb>
