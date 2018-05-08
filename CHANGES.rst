@@ -6,6 +6,11 @@ There's a frood who really knows where his towel is.
 2.13b4 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Provide a css class on the social like buttons <div> to reflect the no tracking settings: render-link if simple links are provided,  render-plugin if javascript is loaded from the social platforms. [f.vandijk]
+
+- Facebook Plugin: Provide a link to Facebook's sharer.php if no tracking is enabled but no app_id has been provided in the control panel. [fredvd]
+
+
 - Fix upgrade step when there are no plone.app.tiles recrods.
   [erral]
 

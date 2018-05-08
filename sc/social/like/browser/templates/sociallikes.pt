@@ -1,5 +1,5 @@
 <div id="viewlet-social-like"
-     tal:attributes="class view/typebutton"
+     tal:attributes="class python:view.typebutton+' render-'+view.render_method"
      style="display:none" i18n:domain="sc.social.like" tal:condition="view/enabled">
   <tal:plugin tal:repeat="plugin view/plugins">
     <div tal:attributes="class string:sociallike-network-${plugin/id}">
